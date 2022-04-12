@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--main-paragraph);
+    display: flex;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    background-color: var(--card-background);
+    border-radius: 7px;
+}
+
+.info-div {
+    order: 2;
+    text-align: center;
+    margin: 25px;
+    max-width: 400px;
+}
+
+.main-heading {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-heading);
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.main-heading span {
+    color: var(--accent);
+}
+
+.description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.stat-item {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.stat-item h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    color: var(--main-heading);
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+}
+
+.img-div {
+    position: relative;
+    display: flex;
+    order: 1;
+}
+
+.img-overlay {
+    position: absolute;
+    background-color: var(--accent);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.main-img {
+    height: 100%;
+    width: 100%;
+    content: url('./images/image-header-mobile.jpg');
+    object-fit: contain;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
