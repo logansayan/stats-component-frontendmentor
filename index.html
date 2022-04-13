@@ -7,6 +7,28 @@
     <title>Stats Preview Component</title>
     <link rel="stylesheet" media="screen and (min-width: 1106px)" href="./desktop.css">
     <link rel="stylesheet" media="screen and (max-width: 1105px)" href="./mobile.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .attribution {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 400px;
+            font-family: 'Inter', sans-serif;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: var(--main-paragraph);
+        }
+
+        .attribution a {
+            color: var(--main-heading);
+        }
+    </style>
 </head>
 <body>
     <div class="main-container">
@@ -33,6 +55,10 @@
             <div class="img-overlay"></div>
             <img src="./images/image-header-desktop.jpg" alt="main-img" class="main-img">
         </div>
+    </div>
+    <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
+        <p>Coded by <a href="https://www.linkedin.com/in/thesayandas/" target="_blank">Sayan Das</a>.</p>
     </div>
 </body>
 </html>

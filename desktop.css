@@ -24,6 +24,11 @@ html, body {
     background-color: var(--main-background);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-container {
     display: flex;
     background-color: var(--card-background);
@@ -113,6 +118,9 @@ html, body {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
+
+
+
 
 
 
